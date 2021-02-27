@@ -1,55 +1,98 @@
+/* divisões da tela */
 
+.two{
+    height: 170vh;
+}
+
+.six{
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* textos */
+#titulo_atividades{
+	font-size: 2.5em;
+}
 .nome-atividade{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	width: 80%;
 	margin: 0 auto;
     height: 100%;
 }
-
 .nome-atividade img{
-	max-width: 300px;
+	max-width: 250px;
     height: auto;
-    margin-top: 10%;
+    margin: 10% auto;
 }
-
-
 .texto_atividades_especificas{
 	padding-top: 10%;
-	color: white;
-    text-align: left;
-    margin-bottom: 10%;
+	color: #2062d4;
+    text-align: center;
+    margin-bottom: 12%;
 }
-.two{
-        height: 90vh;
-    }
-.three{
-    height: 75vh;
+.infos{
+	color: #2062d4;
+	text-align: left;
+	margin: 0rem;
 }
-.six{
-    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
-    margin-top: -10%;
-}
-/* telas grandes widescreens 
-@media screen and (min-width: 1280px){
 
-    
-    .nome-atividade img{
-        max-width: 250px;
-    }
+/* telas pequenas */
+@media screen and (min-width: 350px){
+	.two{
+		height: 135vh;
+	}
+}
 
-	.nome-atividade{
-		flex-direction: row;
-		justify-content: space-between;
-		padding-bottom: 5%;
+/*telas medias - tablet */
+@media screen and (min-width: 760px){
+	.two{
+		height: 120vh;
+	}
+	.nome-atividade img{
+		max-width: 300px;
 	}
 
-	.nome-atividade .texto_atividades_especificas{
-		text-align: left;
-        padding: 8%;
-        padding-right: 0;
+	.texto_atividades_especificas{
+		font-size: 1.4em;
+	}
+	.texto_atividades_especificas h3{
+		font-size: 1.7em;
+	}
+	.infos{
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 1023px){
+	.two{
+		height: 100vh;
+	}
+	.nome-atividade img{
+		max-width: 350px;
+	}
+
+	.texto_atividades_especificas{
+		font-size: 1.5em;
+	}
+	.texto_atividades_especificas h3{
+		font-size: 1.8em;
+	}
+	.infos{
+		font-size: 1.2em;
+	}
+}
+
+/* telas grandes widescreens */
+@media screen and (min-width: 1279px){
+	.two{
+		height: 160vh;
+	}
+    
+    .nome-atividade img{
+        max-width: 400px;
+    }
+	.texto_atividades_especificas{
+		padding-top: 2%;
 	}
 
 }

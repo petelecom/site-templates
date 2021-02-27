@@ -44,15 +44,17 @@
 		<h3 class="texto_rela">Relatórios de Atividades</h3><br>
 		<br>
 	</section>
-	<section class="six">
+    <section class="six">
     	<div class="rodap">
             <div class="fim">
-            	<div class="link-end"><a href="https://www.google.com.br/maps/place/1N+-+Santa+M%C3%B4nica,+Uberl%C3%A2ndia+-+MG/@-18.919257,-48.2597495,19z/data=!3m1!4b1!4m5!3m4!1s0x94a44574b317ab45:0x1de0c410e33f7ccf!8m2!3d-18.9192583!4d-48.2592023" ><i class="fas fa-map-marker-alt"></i></a><p>Av.João Naves de Ávila, 2121 - Santa Mônica, Uberlândia - MG - Sala 1N04</p></div>
-                <div class="link-mail"><a href="sobre.html" ><i class="fas fa-envelope-open"></i></a><p>petelecomufu@gmail.com</p></div>
+            	<div class="link-end"><a href="https://www.google.com.br/maps/place/1N+-+Santa+M%C3%B4nica,+Uberl%C3%A2ndia+-+MG/@-18.919257,-48.2597495,19z/data=!3m1!4b1!4m5!3m4!1s0x94a44574b317ab45:0x1de0c410e33f7ccf!8m2!3d-18.9192583!4d-48.2592023" ><i class="fas fa-map-marker-alt"></i></a><p> Av.João Naves de Ávila, 2121 - Santa Mônica, Uberlândia - MG - Sala 1N04 </p></div>
+                <div class="link-mail"><a href="sobre.html" ><i class="fas fa-envelope-open"></i></a><p> petelecomufu@gmail.com </p></div>
                 <div class="link-face"><a href="https://www.facebook.com/Pet-Telecom-107995847533033" ><i class="fab fa-facebook"></i></a><p>Pet Telecom</p></div>
                 <div class="link-ins"><a href="https://www.instagram.com/petelecom_ufu/" ><i class="fab fa-instagram"></i></a><p> @petelecom_ufu </p></div>
-    	   </div>
-           <p class="direitos">Copyright © 2020 - Desenvolvido por Pet Telecom</p>
+				<div class="link-ins"><a href="https://www.youtube.com/channel/UCKFlZbyQqJ6YA4YJgmZJvAw" ><i class="fab fa-youtube"></i></a><p> Pet Telecom - UFU </p></div>
+				<div class="link-ins"><a href="https://pet-telecom.coursify.me/" ><i class="fas fa-bug"></i></a><p> PET TELECOM </p></div>
+			</div>
+           <div class="core"><i class="fas fa-heart"></i><p class="direitos">Copyright © 2020 - Desenvolvido por Pet Telecom</p></div>
         </div>
     </section>
 
@@ -65,6 +67,15 @@
    		$(".btn-close").click(function(){
    			$(".menu").hide();
    		});
+		$(".direitos").ready(function(){
+   			$(".fa-heart").hide();
+   		});
+		$(".direitos").hover(function(){
+   			$(".fa-heart").show();
+		});	   
+		$(".direitos").mouseout(function(){
+   			$(".fa-heart").hide();
+   		}); 
    		jQuery(function () {
 		  jQuery(window).scroll(function () {
 		    if (jQuery(this).scrollTop() > 1400) {
