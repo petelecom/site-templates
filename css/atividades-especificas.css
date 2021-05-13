@@ -85,7 +85,7 @@
 /* telas grandes widescreens */
 @media screen and (min-width: 1279px){
 	.two{
-		height: 160vh;
+		height: 400vh;
 	}
     
     .nome-atividade img{
